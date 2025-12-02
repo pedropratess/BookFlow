@@ -17,10 +17,13 @@ Este repositório contém a implementação completa do projeto de banco de dado
 
 ## 🚀 Tecnologias Utilizadas
 - MySQL Workbench
-- Git & GitHub
+- GitHub
 
 ## 🧑‍💻 Objetivo Geral
 Criar, estruturar e manipular um banco de dados relacional completo aplicando técnicas de DDL e DML.
 
 ## 📄 Autor
+Pedro Prates.
+
+
 Projeto desenvolvido para fins acadêmicos.
