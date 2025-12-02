@@ -1,0 +1,28 @@
+#  Relatório da Experiência Prática – BookFlow
+
+## 1. Identificação do Projeto
+Sistema de gerenciamento de biblioteca BookFlow.
+
+## 2. Minimundo
+(Conteúdo completo igual ao arquivo minimundo.txt)
+
+## 3. Modelo Conceitual (DER)
+*Arquivo DER.png incluso no repositório.*
+
+## 4. Modelo Lógico
+(Conteúdo igual ao arquivo modelo_logico.txt)
+
+## 5. Modelo Físico
+Estruturas SQL completas usadas para criação do banco.
+
+## 6. Dicionário de Dados
+(Conteúdo igual ao arquivo dicionario_de_dados.txt)
+
+## 7. Comandos DML
+Inclui INSERT, SELECT, UPDATE e DELETE.
+
+## 8. Testes e Resultados
+Validação feita via MySQL Workbench.
+
+## 9. Conclusão
+O projeto cumpriu todos os requisitos, incluindo criação de banco relacional, modelagem, DDL, DML e versionamento através de Git/GitHub.
