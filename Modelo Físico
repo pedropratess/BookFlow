@@ -1,0 +1,41 @@
+CREATE DATABASE IF NOT EXISTS bookflow;
+USE bookflow;
+
+CREATE TABLE autor (
+    id_autor INT AUTO_INCREMENT PRIMARY KEY,
+    nome VARCHAR(100) NOT NULL
+);
+
+CREATE TABLE livro (
+    isbn VARCHAR(20) PRIMARY KEY,
+    titulo VARCHAR(120) NOT NULL,
+    genero VARCHAR(50) NOT NULL,
+    id_autor INT NOT NULL,
+    FOREIGN KEY (id_autor) REFERENCES autor(id_autor)
+);
+
+CREATE TABLE usuario (
+    id_usuario INT AUTO_INCREMENT PRIMARY KEY,
+    nome VARCHAR(100) NOT NULL,
+    endereco VARCHAR(150),
+    telefone VARCHAR(20)
+);
+
+CREATE TABLE bibliotecario (
+    id_bibliotecario INT AUTO_INCREMENT PRIMARY KEY,
+    nome VARCHAR(100) NOT NULL
+);
+
+CREATE TABLE emprestimo (
+    id_emprestimo INT AUTO_INCREMENT PRIMARY KEY,
+    data_emprestimo DATE NOT NULL,
+    data_devolucao DATE,
+    multa DECIMAL(10,2) DEFAULT 0,
+    status VARCHAR(20) NOT NULL,
+    id_usuario INT NOT NULL,
+    isbn VARCHAR(20) NOT NULL,
+    id_bibliotecario INT NOT NULL,
+    FOREIGN KEY (id_usuario) REFERENCES usuario(id_usuario) ON DELETE CASCADE,
+    FOREIGN KEY (isbn) REFERENCES livro(isbn),
+    FOREIGN KEY (id_bibliotecario) REFERENCES bibliotecario(id_bibliotecario)
+);
