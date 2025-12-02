@@ -1,0 +1,39 @@
+Modelo Lógico – BookFlow
+
+Tabelas:
+
+1) LIVRO
+- isbn (PK)
+- titulo
+- genero
+- id_autor (FK)
+
+2) AUTOR
+- id_autor (PK)
+- nome
+
+3) USUARIO
+- id_usuario (PK)
+- nome
+- endereco
+- telefone
+
+4) BIBLIOTECARIO
+- id_bibliotecario (PK)
+- nome
+
+5) EMPRESTIMO
+- id_emprestimo (PK)
+- data_emprestimo
+- data_devolucao
+- multa
+- status
+- id_usuario (FK)
+- isbn (FK)
+- id_bibliotecario (FK)
+
+Relacionamentos:
+- Autor 1:N Livro
+- Usuário 1:N Empréstimo
+- Livro 1:N Empréstimo
+- Bibliotecário 1:N Empréstimo
