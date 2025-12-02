@@ -1,0 +1,24 @@
+Sistema BookFlow – Minimundo
+
+O sistema tem como objetivo ajudar uma biblioteca a organizar seus livros e controlar os empréstimos feitos pelos usuários. O público-alvo são funcionários da biblioteca que precisam registrar entradas, saídas e dados dos leitores. O propósito principal é facilitar o gerenciamento e evitar perda de informações.
+
+Processos principais:
+1. Cadastro de livros.
+2. Cadastro de usuários.
+3. Registro de empréstimos.
+4. Registro de devoluções.
+5. Consulta de livros disponíveis.
+6. Controle de multas e atrasos.
+
+Entidades identificadas:
+- Livro
+- Autor
+- Usuário
+- Bibliotecário
+- Empréstimo
+- Devolução
+- Gênero
+
+Os relacionamentos incluem: Autor escreve Livro, Usuário realiza Empréstimo, Livro participa do Empréstimo, Bibliotecário registra Empréstimo.
+
+O sistema permite controle de disponibilidade e histórico de empréstimos.
