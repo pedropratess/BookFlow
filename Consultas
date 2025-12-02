@@ -1,0 +1,18 @@
+-- 1) Listar todos os livros com seus autores
+SELECT livro.titulo, autor.nome
+FROM livro
+JOIN autor ON livro.id_autor = autor.id_autor;
+
+-- 2) Empréstimos ativos
+SELECT * FROM emprestimo WHERE status = 'Ativo';
+
+-- 3) Usuários que já realizaram empréstimos
+SELECT usuario.nome, emprestimo.data_emprestimo
+FROM usuario
+JOIN emprestimo ON usuario.id_usuario = emprestimo.id_usuario;
+
+-- 4) Livros por ordem alfabética
+SELECT titulo FROM livro ORDER BY titulo;
+
+-- 5) Limitar a 3 empréstimos mais recentes
+SELECT * FROM emprestimo ORDER BY data_emprestimo DESC LIMIT 3;
